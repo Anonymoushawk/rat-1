@@ -51,9 +51,6 @@ namespace xClient
           //  System.Threading.Thread.Sleep(5000);
             //Application.Run(new Form1());
 
-            hosts.Add("islambou.duckdns.org");
-            hosts.Add("islambou2.duckdns.org");
-            hosts.Add("islambou3.duckdns.org");
             hosts.Add("127.0.0.1");
             port = 1994;
             s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
