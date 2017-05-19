@@ -1,0 +1,13 @@
+c:\users\islam\onedrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.Properties.Resources.resources
+c:\users\islam\onedrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.csproj.GenerateResource.Cache
+c:\users\islam\onedrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\bin\Debug\Jiraiya.exe
+c:\users\islam\onedrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\bin\Debug\Jiraiya.pdb
+c:\users\islam\onedrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.exe
+c:\users\islam\onedrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.pdb
+c:\users\islam\onedrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.Forms.frmMain.resources
+c:\users\islam\onedrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.Forms.frmScreen.resources
+C:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.Forms.frmControl.resources
+C:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.Forms.frmDownload.resources
+C:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.Forms.frmUploads.resources
+C:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.Forms.frmRename.resources
+C:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Jiraiya\obj\Debug\Jiraiya.csprojResolveAssemblyReference.cache

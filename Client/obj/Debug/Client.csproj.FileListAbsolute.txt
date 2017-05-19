@@ -1,0 +1,7 @@
+c:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+c:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Client\bin\Debug\Jiraiya.exe
+c:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Client\bin\Debug\Jiraiya.pdb
+c:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Client\obj\Debug\Jiraiya.exe
+c:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Client\obj\Debug\Jiraiya.pdb
+c:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Client\obj\Debug\xClient.Properties.Resources.resources
+C:\Users\islam\OneDrive\documents\visual studio 2013\Projects\Jiraiya\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache

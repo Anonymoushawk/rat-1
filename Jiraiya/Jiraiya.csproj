@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADAB6E3A-D9D1-4C64-86DF-D4B7295390C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jiraiya</RootNamespace>
+    <AssemblyName>Jiraiya</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="commands\command.cs" />
+    <Compile Include="commands\DoClose.cs" />
+    <Compile Include="commands\DoCopyCut.cs" />
+    <Compile Include="commands\DoExecute.cs" />
+    <Compile Include="commands\DoRename.cs" />
+    <Compile Include="commands\DoRestart.cs" />
+    <Compile Include="commands\DownExec.cs" />
+    <Compile Include="commands\GetDirectory.cs" />
+    <Compile Include="commands\GetFile.cs" />
+    <Compile Include="commands\GetInfo.cs" />
+    <Compile Include="commands\GetScreen.cs" />
+    <Compile Include="Controls\ListViewColumnSorter.cs" />
+    <Compile Include="Controls\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlatformHelper.cs" />
+    <Compile Include="Forms\Downloads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Downloads.Designer.cs">
+      <DependentUpon>Downloads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmControl.Designer.cs">
+      <DependentUpon>frmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRename.Designer.cs">
+      <DependentUpon>frmRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmScreen.Designer.cs">
+      <DependentUpon>frmScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUploads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUploads.Designer.cs">
+      <DependentUpon>frmUploads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="responds\respond.cs" />
+    <Compile Include="responds\SendDirectory.cs" />
+    <Compile Include="responds\SendFile.cs" />
+    <Compile Include="responds\SendInfo.cs" />
+    <Compile Include="responds\SendScreen.cs" />
+    <Compile Include="responds\UploadExec.cs" />
+    <Compile Include="tcp\Client.cs" />
+    <Compile Include="tcp\Server.cs" />
+    <Compile Include="tcp\userData.cs" />
+    <Compile Include="Utils\Compression\SafeQuickLZ.cs" />
+    <Compile Include="Utils\Helpers.cs" />
+    <Compile Include="Utils\IBcodec.cs" />
+    <Compile Include="Utils\IBfileTrans.cs" />
+    <Compile Include="Utils\NativeMethods.cs" />
+    <Compile Include="Utils\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\Downloads.resx">
+      <DependentUpon>Downloads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmControl.resx">
+      <DependentUpon>frmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRename.resx">
+      <DependentUpon>frmRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScreen.resx">
+      <DependentUpon>frmScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUploads.resx">
+      <DependentUpon>frmUploads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
