@@ -3,7 +3,7 @@
 Remote administration tools allows you to : 
 
 
-* (brows / delete / copy / download ) remote files .
+* (brows / delete / copy / download / execute ) remote files .
 * Upload files to remote machine . 
 * see live desktop 
 
